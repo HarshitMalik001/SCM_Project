@@ -1,13 +1,13 @@
 #include <stdio.h>
 void tktk(char tk[][3]){
-    printf("c→ 1   2   3\n");
+    printf("c→ 1   2   3 \n");
     printf("r\n");
     for(int i = 0 ; i<3 ; i++){
         if (i ==0){
-            printf("↓    |   |\n");
+            printf("↓    |   |    \n");
         }
         else{
-            printf("     |   |\n");
+            printf("     |   |    \n");
         }
         for (int j = 0 ; j< 3 ; j++){
             if(j==0){
@@ -22,16 +22,15 @@ void tktk(char tk[][3]){
             }
         }
         if (i != 2){
-            printf("  ___|___|___\n");
+            printf("  ___|___|___ \n");
         }
         else if (i==2){
-            printf("     |   |\n");
+            printf("     |   |    \n");
         }
     }
     }
 
 int main() {
     char tk[3][3] = {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
-
     tktk(tk);
 }
