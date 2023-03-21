@@ -2,9 +2,9 @@
 int main(){
     int r,c;
     char w,name1[100],name2[100];
-    printf("enter the name of first player");
+    printf("enter the name of first player : ");
     scanf("%c",&name1);
-    printf("enter the name of second player");
+    printf("enter the name of second player : ");
     scanf("%c",&name2);
     int flag = 1;
     int player = 1;
@@ -19,6 +19,8 @@ int main(){
                 }
             }
         }
+    
+    
         if (gameflag){
             if (player == 1){
                 print("\n %s TURN ",name1);
